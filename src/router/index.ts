@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import Home from '../views/Home.vue';
+import About from '../views/about/about.vue';
+import FunMath from '../views/fun-math/fun-math.vue';
+import Home from '../views/home/home.vue';
+import Meme from '../views/meme/meme.vue';
+import Project from '../views/project/project.vue';
 
 Vue.use(VueRouter);
 
@@ -13,14 +17,30 @@ const routes: RouteConfig[] = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
+    component: About,
+    children: [
+
+    ],
+  },
+  {
+    path: '/project',
+    name: 'Project',
+    component: Project,
+  },
+  {
+    path: '/fun-math',
+    name: 'Fun Math',
+    component: FunMath,
+  },
+  {
+    path: '/meme',
+    name: 'Meme',
+    component: Meme,
   },
 ];
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
 });
 
