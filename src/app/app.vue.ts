@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import HelloWorld from '../components/hello-world/hello-world.vue';
+import NavigationBar from '../components/navigator-bar/navigator-bar.vue';
 
 @Component ({
     components: {
-        HelloWorld,
+        NavigationBar,
     },
 })
 
