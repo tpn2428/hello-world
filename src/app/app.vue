@@ -8,6 +8,9 @@
 <script lang="ts" src="./app.vue.ts"></script>
 
 <style lang="scss">
+html {
+  overflow-y: hidden !important;
+}
 .app {
   height: 100%;
 }

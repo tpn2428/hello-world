@@ -12,8 +12,8 @@ export default class NavigatorBar extends Vue {
     public async directToAbout() {
         await this.$router.push({name: 'About'});
     }
-    public async directToProject() {
-        await this.$router.push({name: 'Project'});
+    public async directToProjects() {
+        await this.$router.push({name: 'Projects'});
     }
     public async directToMeme() {
         await this.$router.push({name: 'Meme'});
