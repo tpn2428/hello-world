@@ -1,6 +1,6 @@
 import Vue from 'vue';
-import VueRouter, { RouteConfig } from 'vue-router';
-import { AppRoute } from '../app/app-route';
+import VueRouter, {RouteConfig} from 'vue-router';
+import {AppRoute} from '../app/app-route';
 import About from '../views/about/about.vue';
 import FunMath from '../views/fun-math/fun-math.vue';
 import Home from '../views/home/home.vue';
@@ -19,9 +19,7 @@ const routes: RouteConfig[] = [
     path: '/about',
     name: AppRoute.About,
     component: About,
-    children: [
-
-    ],
+    children: [],
   },
   {
     path: '/projects',

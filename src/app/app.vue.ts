@@ -1,12 +1,10 @@
 import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import {Component} from 'vue-property-decorator';
 import NavigationBar from '../components/navigator-bar/navigator-bar.vue';
 
-@Component ({
-    components: {
-        NavigationBar,
-    },
+@Component({
+  components: {
+    NavigationBar,
+  },
 })
-
-export default class App extends Vue {
-}
+export default class App extends Vue {}
