@@ -3,23 +3,23 @@
     <div 
       class="flex-container-row flex-item-variable justify-spaced-content"
     >
-      <v-btn flat @click="directToHome()">
+      <v-btn flat @click="directToPath(AppRoute.Home)">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
       </v-btn>
-      <v-btn flat @click="directToFunMath()">
+      <v-btn flat @click="directToPath(AppRoute.FunMath)">
         <span>Fun Math</span>
         <v-icon>mdi-format-superscript</v-icon>
       </v-btn>
-      <v-btn flat @click="directToProjects()"> 
+      <v-btn flat @click="directToPath(AppRoute.Projects)"> 
         <span>Projects</span>
         <v-icon>mdi-xml</v-icon>
       </v-btn> 
-      <v-btn flat @click="directToAbout()">
+      <v-btn flat @click="directToPath(AppRoute.About)">
         <span>About</span>
         <v-icon>mdi-account-circle</v-icon>
       </v-btn>
-      <v-btn flat @click="directToMeme()">
+      <v-btn flat @click="directToPath(AppRoute.Meme)">
         <span>Meme</span>
         <v-icon>mdi-emoticon-cool</v-icon>
       </v-btn>

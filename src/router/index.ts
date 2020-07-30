@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
+import { AppRoute } from '../app/app-route';
 import About from '../views/about/about.vue';
 import FunMath from '../views/fun-math/fun-math.vue';
 import Home from '../views/home/home.vue';
@@ -11,30 +12,30 @@ Vue.use(VueRouter);
 const routes: RouteConfig[] = [
   {
     path: '/',
-    name: 'Home',
+    name: AppRoute.Home,
     component: Home,
   },
   {
     path: '/about',
-    name: 'About',
+    name: AppRoute.About,
     component: About,
     children: [
 
     ],
   },
   {
-    path: '/project',
-    name: 'Project',
+    path: '/projects',
+    name: AppRoute.Projects,
     component: Project,
   },
   {
     path: '/fun-math',
-    name: 'Fun Math',
+    name: AppRoute.FunMath,
     component: FunMath,
   },
   {
     path: '/meme',
-    name: 'Meme',
+    name: AppRoute.Meme,
     component: Meme,
   },
 ];
