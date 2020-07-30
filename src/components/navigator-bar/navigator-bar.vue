@@ -1,6 +1,8 @@
 <template>
   <v-bottom-navigation grow dark class="blue-grey darken-1 white--text">
-    <div class="flex-container-row flex-item-variable" style="justify-content: space-between">
+    <div 
+      class="flex-container-row flex-item-variable justify-spaced-content"
+    >
       <v-btn flat @click="directToHome()">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>

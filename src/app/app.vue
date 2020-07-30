@@ -25,4 +25,7 @@ html {
 .flex-item-variable {
   flex: 1 1 auto;
 }
+.justify-spaced-content {
+  justify-content: space-between;
+}
 </style>

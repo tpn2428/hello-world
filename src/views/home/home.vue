@@ -1,9 +1,5 @@
 <template>
-  <body 
-    class="flex-container-row flex-item-variable background"
-  >
-    bleh
-  </body>
+ 
 </template>
 
 <script lang="ts" src="./home.vue.ts"></script>

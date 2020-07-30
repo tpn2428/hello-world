@@ -35,4 +35,7 @@
   font-size: 18px;
   color: darken($color: #01579B, $amount: 4);
 }
+a {
+  text-decoration: none;
+}
 </style>
