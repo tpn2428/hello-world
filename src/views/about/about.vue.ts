@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import {Component} from 'vue-property-decorator';
 import NavigationBar from '../../components/navigator-bar/navigator-bar.vue';
+import axios from 'axios';
 
 @Component({
   components: {
@@ -8,7 +9,9 @@ import NavigationBar from '../../components/navigator-bar/navigator-bar.vue';
   },
 })
 export default class About extends Vue {
-  public onAlertClick() {
-    alert('Con meo');
+  public async created() {
+    const response = await axios.get('/api/get-primes');
+    console.log(response.data);
   }
+
 }
